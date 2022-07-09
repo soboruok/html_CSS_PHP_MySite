@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+/* Custom Property */
+:root {
+  --primary-color: #34c9d1;
+  --secondary-color: #6de7ed;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Annimation */
+  --animation-duration: 300ms;
+}
+
+/* universial CSS */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+code,
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Navbar */
+.navbar {
+  height: 120px;
+  background-color: var(--secondary-color);
+}
+.navbar img {
+  width: 90px;
+}
+.navbar .flex {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; /* 글자 가운데 정렬 */
+}
+.navbar ul {
+  /* 아래와같이선언해도 flex-direction:row;기본 */
+  display: flex;
+}
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: var(--light-color);
+  font-size: 18px;
+}
+.navbar a:hover {
+  border-bottom: 2px var(--light-color) solid;
+}
+
+/* showCase */
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  background: url("../images/bg.png") center/cover no-repeat;
+  position: relative;
+}
+
+.showcase .grid {
+  align-items: flex-start;
+}
+
+.showcase__text {
+  justify-self: flex-start;
+}
+
+.showcase .grid {
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  overflow: visible; /* 스크롤바를 제거 */
+}
+
+.showcase__form {
+  position: relative;
+  width: 350px;
+  height: 370px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.showcase__form .form-control {
+  margin: 30px 0;
+}
+
+select,
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%; /*border의 라인을 100%*/
+  padding: 3px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* About */
+.about__text h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--weight-bold);
+}
+
+.category__text {
+  align-items: center;
+  width: 170px;
+  margin: 0 auto;
+}
+.category__text h2 {
+  font-weight: var(--weight-bold);
+}
+
+.category__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px; /* 글자 가운데 */
+  font-size: 70px;
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category__icon i {
+  transition: all var(--animation-duration) ease-in;
+}
+
+.category__icon:hover i {
+  color: var(--light-color);
+  transform: rotate(-1deg) scale(1.5);
+}
+
+/* Skills */
+.skills__text h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--weight-bold);
+}
+
+.skills__graphs {
+  margin: 30px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 15px;
+  background-color: gray;
+}
+
+.skill__value {
+  width: 100%;
+  height: 15px;
+  background-color: var(--success-color);
+}
+
+/* freewebsite */
+.freeWebsite {
+  height: 300px;
+  background-color: gray;
+  padding: 10px;
+}
+.freeWebsite__text {
+  color: #ddd;
+}
+.freeWebsite__icon {
+  width: 200px;
+  height: 220px;
+  line-height: 200px; /* 글자 가운데 */
+  font-size: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.freeWebsite__icon i {
+  color: var(--light-color);
+}
+
+/* footer */
+.footer {
+  background-color: #b4becb;
+  margin-top: 50px;
+}
+.footer img {
+  width: 90px;
+}
+.footer ul {
+  display: flex;
+}
+.footer li {
+  margin-right: 15px;
+}
+.footer .social {
+  justify-self: flex-end;
+}
+.footer .social a {
+  margin: 0 10px;
+}
+
+/* Work SubPage */
+.work__head {
+  background: url("../images/bg.png") center/cover no-repeat;
+  position: relative;
+  height: 290px;
+}
+.head__img {
+  width: 200px;
+  height: 220px;
+  line-height: 200px; /* 글자 가운데 */
+  font-size: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.work__main .grid {
+  grid-template-columns: 1fr 3fr;
+}
+.work__main .grid {
+  justify-content: flex-start; /* horizontally top */
+  align-items: flex-start; /* vertically top */
+}
+
+.work__main nav li {
+  font-size: 16px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px #ccc solid;
+}
+
+/* anything under 768px */
+/* Tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .about__categories .grid,
+  .work__main .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .about__text {
+    margin-top: 230px;
+    z-index: 100;
+  }
+  .category {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .category__icon {
+    width: 200px;
+  }
+  .showcase__form {
+    top: -40px;
+  }
+  .freeWebsite {
+    height: 330px;
+  }
+
+  .freeWebsite .flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .freeWebsite__icon {
+    /*visibility: hidden; space is allocated*/
+    display: none;
+  }
+  .footer .grid {
+    grid-template-columns: 1fr;
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
+    height: 100%; /* we can put it make it center*/
+    background-color: #b4becb;
+  }
+
+  .footer .social,
+  .footer nav {
+    justify-self: center;
+  }
+
+  .footer .copyright {
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
+    padding: 0;
+  }
+  .head__text {
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .about__text {
+    margin-top: 350px;
+    z-index: 100;
+  }
+  .freeWebsite {
+    height: 400px;
+  }
+}

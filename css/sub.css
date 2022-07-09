@@ -1,0 +1,42 @@
+.pproductForm {
+  width: 800px;
+}
+/* table */
+table {
+  width: 100%;
+  border-top: 1px solid #444444;
+  border-collapse: collapse;
+}
+th,
+td {
+  border-bottom: 1px solid #444444;
+  padding: 15px;
+}
+
+.productForm {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.productForm .form-control {
+  margin: 30px 0;
+}
+.productForm select,
+.productForm input[type="file"],
+.productForm input[type="number"],
+.productForm input[type="text"],
+.productForm input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%; /*border의 라인을 100%*/
+  padding: 3px;
+  font-size: 16px;
+}
+
+.productForm input:focus {
+  outline: none;
+}
