@@ -1,3 +1,30 @@
+<?php
+
+/* ------------Cookies---------- */
+/*
+WE can set specific data to be stored in the broser and then, 
+retrieve it when the user visits the site again. 
+*/
+
+//Set Cookie
+//Save cookie for 30 days
+//setcookie('name', 'Brad', time() + 86400 * 30);
+setcookie('name', 'Brad', time() + 86400 );
+if(isset($_COOKIE['name'])){
+  echo $_COOKIE['name']; 
+}
+//unSet Cookie
+setcookie('name', '' , time()-86400);
+
+/* ------------Session---------- */
+/* Sessions can store information to be used in multiple pages. 
+unlike cookies, It is stored on the server
+*/
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,36 +38,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/sub.css" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/common.css" />
     <title>MySite</title>
   </head>
   <body>
     <div class="navbar">
       <div class="container flex">
-        <h1 class="logo"><img src="../images/logo.png" alt="" /></h1>
+        <h1 class="logo"><img src="images/logo.png" alt="" /></h1>
         <nav>
           <ul>
-            <li><a href="index.html">#</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="work.html">Work</a></li>
           </ul>
         </nav>
-      </div>
-    </div>
-
-     <!-- Head -->
-     <div class="work__head py-3">
-      <div class="container grid">
-        <div class="head__text">
-          <h1 class="xl">Work</h1>
-          <p class="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="head__img">
-          <a href="#"><i class="fa-solid fa-circle-nodes"></i></a>
-        </div>
       </div>
     </div>

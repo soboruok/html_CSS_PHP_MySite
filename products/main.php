@@ -1,6 +1,6 @@
 <?php
   /**@var $pdo \PDO */
-  require_once "../../database.php";
+  require_once "../lib/database.php";
 
 
   $search = $_GET['search'] ?? '';
@@ -18,7 +18,7 @@
   
 ?>
 
-    <?php include_once "../../layout/header.php"; ?>
+    <?php include_once "./layout/header.php"; ?>
 
     <!-- main -->
     <div class="main__productList py-3">
@@ -71,4 +71,4 @@
 
     
 
-<?php include_once "../../layout/footer.php"; ?>
+<?php include_once "./layout/footer.php"; ?>

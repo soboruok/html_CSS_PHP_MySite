@@ -4,8 +4,8 @@
 // phpStorm understand that variable exists. It can also understand 
 // the variable is an instance of the pdo.
 /**@var $pdo \PDO */
-require_once "../../database.php";
-require_once "../../functions.php";
+require_once "../lib/database.php";
+require_once "../lib/functions.php";
 
 //get the id
 $id = $_GET['pid'] ?? null;
@@ -57,9 +57,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ?>
 
-<?php include_once "../../layout/header.php"; ?>
+<?php include_once "./layout/header.php"; ?>
 
 <!-- main -->
 <?php include_once "form.php" ?>
     
-<?php include_once "../../layout/footer.php"; ?>
+<?php include_once "./layout/footer.php"; ?>

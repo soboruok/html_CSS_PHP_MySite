@@ -1,8 +1,8 @@
 <!-- footer -->
-    <div class="footer ">
+<div class="footer ">
       <div class="container grid grid-3">
         <div class="copyright">
-            <h1 class="logo"><img src="../../images/logo.png" alt="" /></h1>
+            <h1 class="logo"><img src="images/logo.png" alt="" /></h1>
           <p>Copyright &copy; 2022</p>
         </div>
         <nav>

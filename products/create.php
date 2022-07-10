@@ -1,7 +1,7 @@
 <?php
 /**@var $pdo \PDO */
-require_once "../../database.php";
-require_once "../../functions.php";
+require_once "../lib/database.php";
+require_once "../lib/functions.php";
 
 $errors = [];
 
@@ -43,9 +43,9 @@ if( $_SERVER['REQUEST_METHOD'] === 'POST'){
 
 ?>
 
-<?php include_once "../../layout/header.php"; ?>
+<?php include_once "./layout/header.php"; ?>
 
 <!-- main -->
 <?php include_once "form.php" ?>
     
-<?php include_once "../../layout/footer.php"; ?>
+<?php include_once "./layout/footer.php"; ?>
