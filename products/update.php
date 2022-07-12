@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION["uusername"])){
+    header("location:../index.php");
+} 
 
 
 // phpStorm understand that variable exists. It can also understand 

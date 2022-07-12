@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION["uusername"])){
+    header("location:../index.php");
+} 
   /**@var $pdo \PDO */
   require_once "../lib/database.php";
 

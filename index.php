@@ -3,7 +3,7 @@
 
 <!--showCase -->
 <div class="showcase">
-  <div class="container grid">
+  <div class="container flex">
     <div class="showcase__text">
       <h1 class="lg">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -13,29 +13,12 @@
         dicta sed quas provident sunt dolore.
       </p>
     </div>
-    <div class="showcase__form card">
-      <h2>Express Interest</h2>
-      <form>
-        <div class="form-control">
-          <input type="text" name="name" placeholder="Name" />
-        </div>
-        <div class="form-control">
-          <input type="text" name="email" placeholder="email" />
-        </div>
-        <div class="form-control">
-          <select name="state" id="state">
-            <option value="">Select State</option>
-            <option value="VIC">VIC</option>
-          </select>
-        </div>
-        <input type="submit" value="Send" class="btn btn-primary" />
-      </form>
-    </div>
+    
   </div>
 </div>
 
 <!-- About -->
-<div class="about my-2">
+<div class="about">
   <div class="container">
     <div class="about__text">
       <h2 class="lg my-2">About Me</h2>

@@ -1,4 +1,8 @@
 <?php
+ session_start();
+ if(isset($_SESSION["uusername"])){
+     header("location:main.php");
+ }
 require_once "../lib/database.php";
 
 //화면을 새로고침했을때 아래와같이 안하면, 이상한 태그가 들어간다. 
@@ -57,41 +61,47 @@ if( $_SERVER['REQUEST_METHOD'] === 'POST'){
             $statement->bindValue(':upassword',$hashedPassword);
             $statement->bindValue(':ucreated',date('Y-m-d H:i:s'));
             $statement->execute();
-            header('Location:dashboard.php');
+            header('Location:main.php');
         }
     }
 }
 ?>
 <?php include_once "./header.php"; ?>
-<?php if(!empty($errors)): ?>
-<div class="btn-error">
-    <?php foreach($errors as $error): ?>
-        <p> <?php echo $error ?> </p>
-    <?php endforeach ?>
+<div class="main__productList py-3">
+    <div class="container flex">
+        <div class="productForm ">
+            <?php if(!empty($errors)): ?>
+            <div class="btn-error">
+                <?php foreach($errors as $error): ?>
+                    <p> <?php echo $error ?> </p>
+                <?php endforeach ?>
+            </div>
+            <?php endif; ?>
+            <form method="POST">
+                <table class="signup__table">
+                    <tr>
+                        <th>User Name </th>
+                        <td><input type="text" name="uusername" placeholder="UserName"></td>
+                    </tr>
+                    <tr>
+                        <th>User Email </th>
+                        <td><input type="text" name="uemail" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <th>Password </th>
+                        <td><input type="password" name="upassword" placeholder="Password"></td>
+                    </tr>
+                    <tr>
+                        <th>Password Confirmation </th>
+                        <td><input type="password" name="upassword_repeat" placeholder="Repeat password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" name="signup-submit" class="btn btn-primary">Signup</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
 </div>
-<?php endif; ?>
-<form method="POST">
-    <table class="signup__table">
-        <tr>
-            <th>User Name </th>
-            <td><input type="text" name="uusername" placeholder="UserName"></td>
-        </tr>
-        <tr>
-            <th>User Email </th>
-            <td><input type="text" name="uemail" placeholder="Email"></td>
-        </tr>
-        <tr>
-            <th>Password </th>
-            <td><input type="password" name="upassword" placeholder="Password"></td>
-        </tr>
-        <tr>
-            <th>Password Confirmation </th>
-            <td><input type="password" name="upassword_repeat" placeholder="Repeat password"></td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <button type="submit" name="signup-submit">Signup</button>
-            </td>
-        </tr>
-    </table>
-</form>

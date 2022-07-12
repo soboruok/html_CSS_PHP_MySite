@@ -1,4 +1,8 @@
 <?php
+ session_start();
+ if(isset($_SESSION["uusername"])){
+     header("location:main.php");
+ }
 require_once "../lib/database.php";
 /* ------------ Sessions ------------ */
 
@@ -8,6 +12,7 @@ require_once "../lib/database.php";
 */
 
 //화면을 새로고침했을때 아래와같이 안하면, 이상한 태그가 들어간다. 
+$errors = [];
 $uemail='';
 $upassword='';
 
@@ -29,24 +34,25 @@ if( $_SERVER['REQUEST_METHOD'] === 'POST'){
 
       if ($member) {
         if ($member['uemail'] != $uemail) {
-          echo "<span style='display: block; color: red;'>UserEmail is wrong</span>";
+          $errors[] = "UserEmail is wrong";
         } 
 
         //$match = password_verify($origin_pw, $hashedPassword);  var_dump($match);
         $pwdCheck = password_verify($upassword, $member['upassword']);
         if($pwdCheck == false){
-          echo "<span style='display: block; color: red;'>Password doesn't match</span>";
-          exit();
+          $errors[] = "Password doesn't match";
+          
         } else {
           session_start();
           $_SESSION['uemail'] = $member['uemail'];
           $_SESSION['uusername'] = $member['uusername'];
-          header('Location:dashboard.php');
+          $_SESSION['ulevel'] = $member['ulevel'];
+          header('Location:main.php');
           exit();
         }
 
       } else {
-        echo "<span style='display: block; color: red;'>memeber doesn't exist</span>";
+        $errors[] = "memeber doesn't exist";
       }
     }
   }
@@ -55,9 +61,16 @@ if( $_SERVER['REQUEST_METHOD'] === 'POST'){
 
 ?>
 <?php include_once "./header.php"; ?>
-<div class="main__productList py-3">
+<div class="main__productList py-3 my-5">
     <div class="container flex">
-        <div class="productForm ">
+        <div class="productForm card ">
+        <?php if(!empty($errors)): ?>
+            <div class="btn-error">
+            <?php foreach($errors as $error): ?>
+                <p> <?php echo $error ?> </p>
+                <?php endforeach ?>
+            </div>
+            <?php endif; ?>
         <form action="" method="POST">
             <div>
                 <label>Username: </label>
@@ -69,7 +82,7 @@ if( $_SERVER['REQUEST_METHOD'] === 'POST'){
                 <input type="password" name="upassword">
             </div>
             <br>
-                <input type="submit" name="submit" value="Submit">
+                <input type="submit" name="submit" value="Submit" class="btn btn-primary">
         </form>
         </div>
     </div>

@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+/* Custom Property */
+:root {
+  --primary-color: #34c9d1;
+  --secondary-color: #6de7ed;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Annimation */
+  --animation-duration: 300ms;
+}
+
+/* universial CSS */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+code,
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Navbar */
+.navbar {
+  height: 120px;
+  background-color: var(--secondary-color);
+}
+.navbar img {
+  width: 90px;
+}
+.navbar .flex {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; /* 글자 가운데 정렬 */
+}
+.navbar ul {
+  /* 아래와같이선언해도 flex-direction:row;기본 */
+  display: flex;
+}
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: var(--light-color);
+  font-size: 18px;
+}
+.navbar a:hover {
+  border-bottom: 2px var(--light-color) solid;
+}
+
+/* table */
+table {
+  width: 100%;
+  border-top: 1px solid #444444;
+  border-collapse: collapse;
+}
+th,
+td {
+  border-bottom: 1px solid #444444;
+  padding: 2px 8px 2px 8px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  /* flex-direction:column; 수직으로 정렬.기본은row */
+  justify-content: center; /*길이에서의 가운데*/
+  align-items: center; /*높이에서의 가운데*/
+}
+
+select,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%; /*border의 라인을 100%*/
+  padding: 3px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* 
+  grid-template-columns : 열을만든다
+  grid-template-rows : 행을만든다.
+  grid-template-columns: 2fr 1fr 비율로..
+  grid-template-columns: repeat(2,1fr)1fr을 두번반복
+  */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center; /* horizontally center */
+  align-items: center; /* vertically center */
+  height: 100%; /* we can put it make it center*/
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+
+.admin__list .grid {
+  justify-content: flex-start; /* horizontally top */
+  align-items: flex-start; /* vertically top */
+}
+
+.admin__list .grid {
+  grid-template-columns: 1fr 3fr;
+}
+
+/* utitlies */
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+/* Backgrounds & colored buttons */
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.bg-light,
+.btn-light {
+  background-color: var(--light-color);
+  color: #fff;
+}
+
+.btn-error {
+  color: red;
+}

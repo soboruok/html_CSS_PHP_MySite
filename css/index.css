@@ -100,7 +100,6 @@ pre {
   height: 400px;
   background-color: var(--primary-color);
   background: url("../images/bg.png") center/cover no-repeat;
-  position: relative;
 }
 
 .showcase .grid {
@@ -108,7 +107,10 @@ pre {
 }
 
 .showcase__text {
-  justify-self: flex-start;
+  height: 100%;
+  justify-self: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .showcase .grid {
@@ -299,10 +301,6 @@ input:focus {
     width: 100%;
   }
 
-  .about__text {
-    margin-top: 230px;
-    z-index: 100;
-  }
   .category {
     display: flex;
     justify-content: space-evenly;
