@@ -49,8 +49,9 @@ unlike cookies, It is stored on the server
         <h1 class="logo"><img src="images/logo.png" alt="" /></h1>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="work.html">Portfolios</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="work.php">Portfolios</a></li>
+            <li><a href="administrator/login.php">Admin</a></li>
           </ul>
         </nav>
       </div>

@@ -308,9 +308,7 @@ input:focus {
   .category__icon {
     width: 200px;
   }
-  .showcase__form {
-    top: -40px;
-  }
+
   .freeWebsite {
     height: 330px;
   }
@@ -350,11 +348,14 @@ input:focus {
 
 /* Mobile */
 @media (max-width: 500px) {
-  .about__text {
-    margin-top: 350px;
-    z-index: 100;
-  }
   .freeWebsite {
     height: 400px;
+  }
+
+  .showcase__text {
+    margin-top: 20px;
+  }
+  .about {
+    margin-top: 30px;
   }
 }

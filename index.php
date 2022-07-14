@@ -6,11 +6,10 @@
   <div class="container flex">
     <div class="showcase__text">
       <h1 class="lg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Everything is hard to start at first, but if we keep doing it, we'll become an expert.
       </h1>
       <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
-        dicta sed quas provident sunt dolore.
+      The process of challenging new things is hard, but when that hard new challenge is over, we feel a tremendous sense of accomplishment.
       </p>
     </div>
     
@@ -23,11 +22,12 @@
     <div class="about__text">
       <h2 class="lg my-2">About Me</h2>
       <p class="lead">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-        necessitatibus facere numquam blanditiis consectetur officiis cumque
-        asperiores, a eius placeat! Iste sunt, molestiae illo laudantium
-        mollitia, veniam expedita ad aliquid enim cumque, nam sit impedit
-        dicta saepe eos quis quasi!
+      I worked as a PHP developer a long time ago. 
+      I wanted to work as a web developer again, 
+      so I started studying again by myself. 
+      And I enrolled in school and studied Netcore MVC, React, etc.
+Of course, many parts such as HTML and CSS changed a lot from what I knew before, 
+so I studied that part alone. I have made a profile website by studying little by little.
       </p>
     </div>
     <div class="about__categories">
@@ -39,8 +39,7 @@
           <div class="category__text">
             <h2>FrontEnd</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-              soluta.
+            HTML, CSS, JQUERY
             </p>
           </div>
         </div>
@@ -52,8 +51,7 @@
           <div class="category__text">
             <h2>BackEnd</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-              soluta.
+            PHP, .Netcore MVC
             </p>
           </div>
         </div>
@@ -65,8 +63,7 @@
           <div class="category__text">
             <h2>Cyber Security</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-              soluta.
+            Phishing Campaing Project in school, PenTesting
             </p>
           </div>
         </div>
@@ -79,10 +76,9 @@
 <div class="freeWebsite my-4 py-2">
     <div class="container flex">
       <div class="freeWebsite__text">
-        <h2 class="lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <h2 class="lg">Free Classes</h2>
         <p class="lead">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sequi
-          corporis nesciunt excepturi omnis assumenda?
+        Share my little knowledge. If you're interested, please watch YouTube.
         </p>
       </div>
       <div class="freeWebsite__icon">
@@ -98,31 +94,10 @@
     <div class="skills__text">
       <h2 class="lg my-2">Skills</h2>
       <p class="lead">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-        tenetur quos mollitia aspernatur maiores aperiam asperiores
-        obcaecati quisquam deleniti repellat, qui laborum recusandae
-        assumenda fuga. Fuga commodi quo id saepe!
+      I've made a score graph for each of my languages that I've decided subjectively that this language is this much and that language seems to be this good.
       </p>
     </div>
     <div class="skills__graphs">
-      <div class="graph">
-        <div class="skill__description">
-          <span>HTML</span>
-          <span>70%</span>
-        </div>
-        <div class="skill__bar">
-          <div class="skill__value" style="width: 70%"></div>
-        </div>
-      </div>
-      <div class="graph">
-        <div class="skill__description">
-          <span>HTML</span>
-          <span>50%</span>
-        </div>
-        <div class="skill__bar">
-          <div class="skill__value" style="width: 50%"></div>
-        </div>
-      </div>
       <div class="graph">
         <div class="skill__description">
           <span>HTML</span>
@@ -134,25 +109,43 @@
       </div>
       <div class="graph">
         <div class="skill__description">
-          <span>HTML</span>
-          <span>90%</span>
+          <span>CSS</span>
+          <span>80%</span>
         </div>
         <div class="skill__bar">
-          <div class="skill__value" style="width: 90%"></div>
+          <div class="skill__value" style="width: 80%"></div>
         </div>
       </div>
       <div class="graph">
         <div class="skill__description">
-          <span>HTML</span>
-          <span>60%</span>
+          <span>PHP</span>
+          <span>80%</span>
         </div>
         <div class="skill__bar">
-          <div class="skill__value" style="width: 60%"></div>
+          <div class="skill__value" style="width: 80%"></div>
         </div>
       </div>
       <div class="graph">
         <div class="skill__description">
-          <span>HTML</span>
+          <span>MySQL</span>
+          <span>80%</span>
+        </div>
+        <div class="skill__bar">
+          <div class="skill__value" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="graph">
+        <div class="skill__description">
+          <span>Net CORE MVC</span>
+          <span>70%</span>
+        </div>
+        <div class="skill__bar">
+          <div class="skill__value" style="width: 70%"></div>
+        </div>
+      </div>
+      <div class="graph">
+        <div class="skill__description">
+          <span>Laravel</span>
           <span>70%</span>
         </div>
         <div class="skill__bar">

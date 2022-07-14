@@ -38,8 +38,8 @@
       <h3 class="my-2">CyberSecurity</h3>
       <nav>
         <ul>
-          <li><a href="#">PHP</a></li>
-          <li><a href="#">NET CORE MVC</a></li>
+          <li><a href="#">Phishing Campaing Project in school</a></li>
+          <li><a href="#">PenTesting</a></li>
         </ul>
       </nav>
     </div>
@@ -47,8 +47,21 @@
     <div class="card">
       <h2>Portpolio</h2>
       <img src="" alt="" />
-      <h3>Used Language</h3>
-      <p>Html, CSS, JAVASCRIPT, React, Nodejs</p>
+      <h3>Used Language : Html, CSS, JAVASCRIPT, React, Nodejs, SQLite</h3>
+      <p><a href="https://github.com/soboruok/react_node_express_sqlite" target="_blank">GIT : React, Node</a></p>
+      <p>
+        <img src="images/image_reactnode.PNG" /> </br>
+      </p>
+      <h3>Used Language : Html, CSS, NetCORE MVC, MSSQL</h3>
+      <p><a href="https://github.com/soboruok/Net_Core_MVC" target="_blank">GIT : NET CORE MVC</a></p>
+      <p>
+        <img src="images/image_netcoremvc.PNG" /> </br>
+      </p>
+      <h3>Used Language : Html, CSS, Codeigniter, JQuery</h3>
+      <p><a href="https://github.com/soboruok/codeigniter" target="_blank">GIT : Codeigniter</a></p>
+      <p>
+        <img src="images/image_codeigniter.PNG" /> </br>
+      </p>
     </div>
   </div>
 </div>
