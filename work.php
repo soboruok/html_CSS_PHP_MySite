@@ -45,22 +45,29 @@
     </div>
 
     <div class="card">
-      <h2>Portpolio</h2>
+    <h2>Portpolio</h2>
+      
+      
       <img src="" alt="" />
-      <h3>Used Language : Html, CSS, JAVASCRIPT, React, Nodejs, SQLite</h3>
+      <h3>Used Language : Html, CSS, JAVASCRIPT, <span class="btn-error">React</span>, Nodejs, SQLite</h3>
       <p><a href="https://github.com/soboruok/react_node_express_sqlite" target="_blank">GIT : React, Node</a></p>
-      <p>
+      <p class="py-2">
         <img src="images/image_reactnode.PNG" /> </br>
       </p>
-      <h3>Used Language : Html, CSS, NetCORE MVC, MSSQL</h3>
+      <h3>Used Language : Html, CSS, <span class="btn-error">Net CORE MVC</span>, MSSQL</h3>
       <p><a href="https://github.com/soboruok/Net_Core_MVC" target="_blank">GIT : NET CORE MVC</a></p>
-      <p>
+      <p class="py-2">
         <img src="images/image_netcoremvc.PNG" /> </br>
       </p>
-      <h3>Used Language : Html, CSS, Codeigniter, JQuery</h3>
+      <h3>Used Language : Html, CSS, <span class="btn-error">Codeigniter</span>, JQuery</h3>
       <p><a href="https://github.com/soboruok/codeigniter" target="_blank">GIT : Codeigniter</a></p>
-      <p>
+      <p class="py-2">
         <img src="images/image_codeigniter.PNG" /> </br>
+      </p>
+      <h3>Used Language : Html, CSS, <span class="btn-error">PHP</span>, MySQL</h3>
+      <p><a href="https://github.com/soboruok/html_CSS_PHP_MySite" target="_blank">GIT : PHP</a></p>
+      <p class="py-2">
+        <img src="images/image_htmlcssphp.PNG" /> </br>
       </p>
     </div>
   </div>

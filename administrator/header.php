@@ -19,7 +19,7 @@
   <body>
     <div class="navbar">
       <div class="container flex">
-        <h1 class="logo"><a href="main.php"><img src="../images/logo.png" alt="" /></a></h1>
+        <h1 class="logo"><a href="../index.php"><img src="../images/logo.png" alt="" /></a></h1>
         <nav>
           <ul>
             <li><a href="main.php">Tax</a></li>

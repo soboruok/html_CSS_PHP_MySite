@@ -297,6 +297,18 @@ input:focus {
     grid-template-rows: 1fr;
   }
 
+  .showcase__text {
+    margin: 15px;
+  }
+
+  .showcase__text .lead {
+    display: none;
+  }
+
+  .about {
+    margin-top: 30px;
+  }
+
   .card {
     width: 100%;
   }
@@ -318,10 +330,12 @@ input:focus {
     justify-content: center;
     align-items: center;
   }
-  .freeWebsite__icon {
-    /*visibility: hidden; space is allocated*/
+
+  /*.freeWebsite__icon {
+    /*visibility: hidden; space is allocated
     display: none;
   }
+  */
   .footer .grid {
     grid-template-columns: 1fr;
     justify-content: center; /* horizontally center */
@@ -350,12 +364,5 @@ input:focus {
 @media (max-width: 500px) {
   .freeWebsite {
     height: 400px;
-  }
-
-  .showcase__text {
-    margin-top: 20px;
-  }
-  .about {
-    margin-top: 30px;
   }
 }
